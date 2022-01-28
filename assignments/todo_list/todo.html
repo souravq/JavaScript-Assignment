@@ -4,10 +4,13 @@
     </head>
     <body>
         <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
+            <input type='text' name='todo_input' id='todo'>
+            <button type='submit' onclick="add_todo_fun()">Add Todo</button>
+
+            <div class="count_todo">Total Todo: <span id="count_span">0</span></div>
             <div class='todos'></div>
         </div>
     </body>
     <script src='./script.js'></script>
+   
 </html>
