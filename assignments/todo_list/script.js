@@ -75,12 +75,14 @@ const DisplayTodo = todos =>{
         
 }
 
+let head_com = document.querySelector('#head_com');
 
 com_todo_btn.addEventListener("click",function(){
-    incomplete_todo_container.style.display="none";
-    complete_todo_container.style.display="block";
+    incomplete_todo_container.style.visibility="hidden";
+    //head_com.style.display="block";
+    complete_todo_container.style.visibility="visible";
 })
 incom_todo_btn.addEventListener("click",function(){
-    complete_todo_container.style.display="none";
-     incomplete_todo_container.style.display="block";
+    complete_todo_container.style.visibility="hidden";
+     incomplete_todo_container.style.visibility="visible";
 })
